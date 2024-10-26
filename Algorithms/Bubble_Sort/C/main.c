@@ -12,8 +12,10 @@
  * each pass by one, as the largest element in the unsorted part of the array is guaranteed
  * to be at the end of the array after each pass.
  * 
- * Time Complexity: O(n^2) in the worst and average case, where n is the number of elements.
- * Space Complexity: O(1) as it is an in-place sorting algorithm.
+ * Characteristics:
+ * - Stable: Preserves the relative order of equal elements.
+ * - Time Complexity: O(n^2) in the worst and average case, where n is the number of elements.
+ * - Space Complexity: O(1) as it is an in-place sorting algorithm.
  */
 
 

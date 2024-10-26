@@ -5,8 +5,10 @@
  * It works by repeatedly dividing in half the portion of the list that could contain the item,
  * until you've narrowed down the possible locations to just one.
  * 
- * Time Complexity: O(log_2 n) in the worst and average case, where n is the number of elements.
- * Space Complexity: O(1) for the iterative version and O(log n) for the recursive version due to call stack.
+ * Characteristics:
+ * - It is a divide-and-conquer algorithm that requires the list to be sorted before the search begins.
+ * - Time Complexity: O(log_2 n) in the worst and average case, where n is the number of elements.
+ * - Space Complexity: O(1) for the iterative version and O(log n) for the recursive version due to call stack.
  */
 
 
