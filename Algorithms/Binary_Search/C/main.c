@@ -1,4 +1,17 @@
+/* 
+ * Binary Search Algorithm
+ * 
+ * Binary Search is an efficient algorithm for finding an item from a sorted list of items.
+ * It works by repeatedly dividing in half the portion of the list that could contain the item,
+ * until you've narrowed down the possible locations to just one.
+ * 
+ * Time Complexity: O(log_2 n) in the worst and average case, where n is the number of elements.
+ * Space Complexity: O(1) for the iterative version and O(log n) for the recursive version due to call stack.
+ */
+
+
 #include <stdio.h>
+
 
 int binary_search(int* array, int length, int value)
 {
@@ -30,12 +43,12 @@ int main(void)
     printf("Pointer to array: %p\n", pointer_to_array);
 
     /* %zu is the format specifier for size_t
-    *  size_t is an unsigned integer type that is the result of the sizeof keyword
-    *  sizeof() returns the size of the array in bytes
-    *  sizeof(array) returns the size of the array in bytes
-    *  sizeof(array[0]) returns the size of the first element of the array in bytes
-    *  sizeof(array) / sizeof(array[0]) returns the length of the array
-    */
+     * size_t is an unsigned integer type that is the result of the sizeof keyword
+     * sizeof() returns the size of the array in bytes
+     * sizeof(array) returns the size of the array in bytes
+     * sizeof(array[0]) returns the size of the first element of the array in bytes
+     * sizeof(array) / sizeof(array[0]) returns the length of the array
+     */
     printf("Size of array: %zu\n", sizeof(array));
     printf("Size of array[0]: %zu\n", sizeof(array[0]));
     int length = sizeof(array) / sizeof(array[0]);
