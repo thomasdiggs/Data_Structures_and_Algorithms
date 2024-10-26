@@ -34,22 +34,22 @@ void insertion_sort(int* array, int length)
 
 int main(void)
 {
-    int array[] = {64, -10, 25, 0, 22, 11, 90, 5, 50, 10};
+    int array[] = { 20, 35, -15, 7, 55, 1, -22 };
     int length = sizeof(array) / sizeof(array[0]);
     
-    printf("Unsorted array: ");
+    printf("Unsorted:");
     for (int i = 0; i < length; i++)
     {
-        printf("%d ", array[i]);
+        printf(" %d", array[i]);
     }
     printf("\n");
 
     insertion_sort(array, length);
 
-    printf("Sorted array: ");
+    printf("Sorted:");
     for (int i = 0; i < length; i++)
     {
-        printf("%d ", array[i]);
+        printf(" %d", array[i]);
     }
     printf("\n");
 

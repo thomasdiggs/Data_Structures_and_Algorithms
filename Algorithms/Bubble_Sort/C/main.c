@@ -41,22 +41,22 @@ void bubble_sort(int* array, int length)
 
 int main(void)
 {
-    int array[] = {20, 35, -15, 7, 55, 1, -22, 15, 18, 30};
+    int array[] = { 20, 35, -15, 7, 55, 1, -22 };
     int length = sizeof(array) / sizeof(array[0]);
 
-    printf("Unsorted array\n");
+    printf("Unsorted:");
     for (int i = 0; i < length; i++)
     {
-        printf("%d ", array[i]);
+        printf(" %d", array[i]);
     }
     printf("\n");
     
     bubble_sort(array, length);
 
-    printf("Sorted array\n");
+    printf("Sorted:");
     for (int i = 0; i < length; i++)
     {
-        printf("%d ", array[i]);
+        printf(" %d", array[i]);
     }
     printf("\n");
 

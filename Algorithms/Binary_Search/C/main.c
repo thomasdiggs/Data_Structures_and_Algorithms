@@ -38,7 +38,7 @@ int binary_search(int* array, int length, int value)
 
 int main(void)
 {
-    int array[] = {1, 3, 5, 7, 9, 12, 14, 15, 17, 20};
+    int array[] = { -22, -15, 1, 7, 20, 35, 55 };
 
     /* int* pointerToArray is a pointer to the location in memory of the first element of the array */
     int* pointer_to_array = array;
@@ -57,14 +57,14 @@ int main(void)
     printf("Length of array: %d\n", length);
 
 
-    int search_value = 17;
+    int search_value = -22;
     int index_of_value = binary_search(array, length, search_value);
     if (index_of_value == -1)
         printf("Value not found\n");
     else
         printf("Index of %d is %d\n", search_value, index_of_value);
 
-    search_value = 3;
+    search_value = 35;
     index_of_value = binary_search(array, length, search_value);
     if (index_of_value == -1)
         printf("Value not found\n");
