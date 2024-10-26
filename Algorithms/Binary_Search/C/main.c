@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int BinarySearch(int* array, int length, int value)
+int binary_search(int* array, int length, int value)
 {
     int left = 0;
     int middle;
@@ -26,8 +26,8 @@ int main(void)
     int array[] = {1, 3, 5, 7, 9, 12, 14, 15, 17, 20};
 
     /* int* pointerToArray is a pointer to the location in memory of the first element of the array */
-    int* pointerToArray = array;
-    printf("Pointer to array: %p\n", pointerToArray);
+    int* pointer_to_array = array;
+    printf("Pointer to array: %p\n", pointer_to_array);
 
     /* %zu is the format specifier for size_t
     *  size_t is an unsigned integer type that is the result of the sizeof keyword
@@ -42,26 +42,26 @@ int main(void)
     printf("Length of array: %d\n", length);
 
 
-    int searchValue = 17;
-    int indexOfValue = BinarySearch(array, length, searchValue);
-    if (indexOfValue == -1)
+    int search_value = 17;
+    int index_of_value = binary_search(array, length, search_value);
+    if (index_of_value == -1)
         printf("Value not found\n");
     else
-        printf("Index of %d is %d\n", searchValue, indexOfValue);
+        printf("Index of %d is %d\n", search_value, index_of_value);
 
-    searchValue = 3;
-    indexOfValue = BinarySearch(array, length, searchValue);
-    if (indexOfValue == -1)
+    search_value = 3;
+    index_of_value = binary_search(array, length, search_value);
+    if (index_of_value == -1)
         printf("Value not found\n");
     else
-        printf("Index of %d is %d\n", searchValue, indexOfValue);
+        printf("Index of %d is %d\n", search_value, index_of_value);
     
-    searchValue = 2;
-    indexOfValue = BinarySearch(array, length, searchValue);
-    if (indexOfValue == -1)
+    search_value = 2;
+    index_of_value = binary_search(array, length, search_value);
+    if (index_of_value == -1)
         printf("Value not found\n");
     else
-        printf("Index of %d is %d\n", searchValue, indexOfValue);
+        printf("Index of %d is %d\n", search_value, index_of_value);
 
     return 0;
 }
